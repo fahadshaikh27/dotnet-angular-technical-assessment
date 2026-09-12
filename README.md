@@ -15,12 +15,6 @@ Handles user authentication and JWT token generation.
 - SQL Server persistence with Entity Framework Core
 - Demo user auto-created on first login
 
-Demo credentials:
-
-```text
-Username: fahad
-Password: Password@123
-```
 
 Main endpoint:
 

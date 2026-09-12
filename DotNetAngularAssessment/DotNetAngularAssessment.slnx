@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../JwtAuthenticationApi/JwtAuthenticationApi.csproj" />
+  <Project Path="../ProductAPI/ProductAPI.csproj" Id="f6262e1c-401b-4964-904b-5025b999c419" />
+  <Project Path="../ProductWebApp/ProductWebApp.csproj" Id="6d870601-aecf-4cd6-815d-222f8ebf8afa" />
+  <Project Path="DotNetAngularAssessment.csproj" />
+</Solution>

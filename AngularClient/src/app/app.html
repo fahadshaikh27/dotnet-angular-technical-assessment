@@ -1,0 +1,49 @@
+@if (authService.loggedIn$ | async) {
+  <div class="container">
+
+    <div class="dashboard-header">
+      <h1>Product Dashboard</h1>
+
+      <button type="button" (click)="logout()">
+        Logout
+      </button>
+    </div>
+
+    <app-product-form></app-product-form>
+
+    <app-product-list></app-product-list>
+
+    <app-product-summary></app-product-summary>
+
+  </div>
+} @else {
+  <div class="login-page">
+    <form class="login-card" (ngSubmit)="login()">
+      <h1>Product Login</h1>
+
+      <label>Username</label>
+      <input
+        type="text"
+        name="username"
+        [(ngModel)]="username"
+        required
+      />
+
+      <label>Password</label>
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+        required
+      />
+
+      @if (errorMessage) {
+        <p class="error-message">{{ errorMessage }}</p>
+      }
+
+      <button type="submit" [disabled]="isLoading">
+        {{ isLoading ? 'Logging in...' : 'Login' }}
+      </button>
+    </form>
+  </div>
+}

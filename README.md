@@ -102,15 +102,6 @@ Both APIs use SQL Server. Update the SQL Server instance in `appsettings.json` i
 
 `JwtAuthenticationApi/appsettings.json`:
 
-```json
-"DefaultConnection": "Server=FAHADSPC\\SQLEXPRESS;Database=DotNetAssessmentDb;Trusted_Connection=True;TrustServerCertificate=True;"
-```
-
-`ProductAPI/appsettings.json`:
-
-```json
-"DefaultConnection": "Server=FAHADSPC\\SQLEXPRESS;Database=ProductAssessmentDb;Trusted_Connection=True;TrustServerCertificate=True;"
-```
 
 Entity Framework Core migrations are included. The APIs apply migrations automatically on startup.
 
